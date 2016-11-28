@@ -3,6 +3,7 @@
 <html>
 <head>
 <title>TP GIT</title>
+<?php session_start(); ?>
 <meta charset="UTF-8" />
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" />
 </head>
