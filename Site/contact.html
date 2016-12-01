@@ -4,9 +4,16 @@
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="w3-theme-blue-grey.css">
+<link rel="stylesheet" type="text/css" href="fontLobster.css">
+<link rel="stylesheet" type="text/css" href="fontTangerine.css">
+<link rel="stylesheet" type="text/css" href="fontRobotto.css">
 <style type="text/css">
 	
-	
+html, body {font-family: "Robotto", Sans-serif}
+	.w3-lobster {font-family: "Lobster", Sans-serif;}
+	.w3-tangerine {font-family: "Tangerine", serif;}
+	.w3-comic {font-family: "Comic Sans MS", cursive, sans-serif;}
+
 #header {
     list-style-type: none;
     margin: 0;
@@ -46,28 +53,28 @@ function myFunction(id) {
 
 
 	<meta charset="utf-8">
-	<title>Contact</title>
+	<title>Accueil</title>
 	<link rel="stylesheet" type="text/css" href="w3.css">
 </head>
 <body class="w3-theme-l2">
 	
 		<div id="header" class="w3-container w3-display-topmiddle w3-theme-d2 w3-round-large w3-card-2">
-			<h2 class="w3-margin-left">Chantal RIEN Consultant</h2>
-			<h3 class="w3-margin-left">Activité Conseil et de Prévention Santé</h3>
+			<h2 class="w3-margin-left w3-comic">Chantal RIEN Consultant</h2>
+			<h3 class="w3-margin-left w3-comic">Activité Conseil et de Prévention Santé</h3>
 			<img src="logo1.png" class="w3-round w3-display-topright" style="width:12%;height:110px" alt="Logo">
 			 <ul id="navpc" class="w3-navbar  w3-round-large">
-	  			<li class="w3-third w3-center w3-theme-d5"><a href="accueil.html">Accueil</a></li>
+	  			<li class="w3-third w3-center w3-theme-d5 w3-lobster w3-large"><a href="accueil.html">Accueil</a></li>
 	  			<li class="w3-third w3-center"> <div class="w3-accordion w3-theme-d5">
-	  					<a onclick="myFunction('Demo1')" class="w3-center">
+	  					<a onclick="myFunction('Demo1')" class="w3-center w3-lobster w3-large">
 	    					Service
 	  					</a>
-	  					<div id="Demo1" class="w3-accordion-content w3-theme-d5 w3-round-large">
+	  					<div id="Demo1" class="w3-accordion-content w3-theme-d5 w3-round-large w3-lobster">
 	    					<a href="service1.html">Structures Sociales et Sanitaires</a>
 	    					<a href="service2.html">Lieux d'Accueil de Jeunes</a>
 	    					<a href="service3.html">Entreprises</a>
 	  					</div>
 					</div></li>
-	  			<li class="w3-third w3-center w3-theme-d5 w3-card-2"><a href="contact.html">Contact</a></li>
+	  			<li class="w3-third w3-center w3-theme-d5 w3-card-2 w3-lobster w3-large"><a href="contact.html">Contact</a></li>
 			</ul>
 		</div>
 	</div>
@@ -82,35 +89,35 @@ function myFunction(id) {
 		<form action="/ma-page-de-traitement" method="post">
 		<table>
 			<tr>
-				<td><label class="w3-text-indigo" for="nom">Email :</label></td>
+				<td><label class="w3-text-indigo w3-tangerine w3-xxlarge" for="nom">Email :</label></td>
 				<td><input type="text" id="nom" name="user_name" style="width: 200%" /></td>
 				
 			</tr>
 			<tr>
-				<td><label class="w3-text-indigo" for="courriel">objet :</label></td>
+				<td><label class="w3-text-indigo w3-tangerine w3-xxlarge" for="courriel">objet :</label></td>
 				<td><input type="email" id="courriel" name="user_email" style="width: 200%" /></td>
 			</tr>
 			<tr>
-				<td><label class="w3-text-indigo" for="message">Message :</label></td>
+				<td><label class="w3-text-indigo w3-tangerine w3-xxlarge" for="message">Message :</label></td>
 				<td><textarea id="message" name="user_message" style="width: 300%;height: 300px"></textarea></td>
 			</tr>
 
 		</table>
 		</form>
 
-		<h1 class="w3-text-dark-grey">Diplômes</h1>
-		<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
-		<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system</p>
-		<p>omnis voluptas assumenda est</p>
+		<h1 class="w3-text-dark-grey w3-lobster">Diplômes</h1>
+		<li style="margin-left: 20px"><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p></li>
+		<li style="margin-left: 20px"><p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system</p></li>
+		<li style="margin-left: 20px"><p>omnis voluptas assumenda est</p></li>
 
-		<h1 class="w3-text-dark-grey">Expériences</h1>
-		<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
-		<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system</p>
-		<p>omnis voluptas assumenda est</p>
+		<h1 class="w3-text-dark-grey w3-lobster">Expériences</h1>
+		<li style="margin-left: 20px"><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p></li>
+		<li style="margin-left: 20px"><p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system</p></li>
+		<li style="margin-left: 20px"><p>omnis voluptas assumenda est</p></li>
 	</div>
 
 
-	<div id="footer" class="w3-container w3-border w3-theme-d2">
+	<div id="footer" class="w3-container w3-theme-d2 w3-round-large w3-card-2 w3-tangerine w3-xlarge">
 		
 		<p class="w3-center"><img src="logo1.png" class="w3-round" style="width:6%;height:35%;margin-right: 450px;" alt="Logo">Propulsée par la SCIC Chrysalide<img src="index.png" class="w3-round" style="width:6%;height:35%;margin-left: 450px" alt="Logo"></p>
 
