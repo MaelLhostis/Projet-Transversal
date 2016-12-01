@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+<style type="text/css">
+	
+#header {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#side {
+	position: fixed;
+	top: 152px;
+}
+
+#footer {
+	bottom: 0px;
+	width: 100%;
+	background-color: #333;
+}
+</style>
+
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+
+	<meta charset="utf-8">
+	<title>Contact</title>
+	<link rel="stylesheet" type="text/css" href="w3.css">
+</head>
+<body>
+	<div class="w3-container">
+		<div id="header" class="w3-container w3-border w3-display-topmiddle" style="width: 100%;top: 0px;">
+			<h2>Chantal RIEN Consultant</h2>
+			<h3>Activité Conseil et de Prévention Santé</h3>
+			 <ul class="w3-navbar">
+	  			<li class="w3-third w3-center w3-light-grey"><a href="accueil.html">Accueil</a></li>
+	  			<li class="w3-third w3-center"> <div class="w3-accordion w3-light-grey">
+	  					<a onclick="myFunction('Demo1')" class="w3-center">
+	    					Service
+	  					</a>
+	  					<div id="Demo1" class="w3-accordion-content">
+	    					<a href="#">Structures Sociales et Sanitaires</a>
+	    					<a href="#">Lieux d'Accueil de Jeunes</a>
+	    					<a href="#">Entreprises</a>
+	  					</div>
+					</div></li>
+	  			<li class="w3-third w3-center w3-light-grey"><a>Contact</a></li>
+				</ul>
+		</div>
+	</div>
+
+	<div id="side" class="w3-container w3-left-align w3-black">
+		<p>Tel : 06.xx.xx.xx.xx</p>	
+		<p>Mail : blabla@pouet.fr</p>
+	</div>
+
+
+	<div class="w3-border" style="padding:20px;margin-top:152px;margin-left:200px;margin-right:150px;height:1500px;">
+		<form action="/ma-page-de-traitement" method="post">
+		<table>
+			<tr>
+				<td><label for="nom">Nom :</label></td>
+				<td><input type="text" id="nom" name="user_name" /></td>
+				
+			</tr>
+			<tr>
+				<td><label for="courriel">Courriel :</label></td>
+				<td><input type="email" id="courriel" name="user_email" /></td>
+			</tr>
+			<tr>
+				<td><label for="message">Message :</label></td>
+				<td><textarea id="message" name="user_message"></textarea></td>
+			</tr>
+
+		</table>
+		</form>
+	</div>
+
+	<div id="footer" class="w3-border">
+		<p class="w3-center">Propulsée par la SCIC Chrysalide</p>			
+	</div>
+
+</body>
+</html>
