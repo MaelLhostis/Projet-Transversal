@@ -1,0 +1,329 @@
+/*
+Theme Name: Mon thème Brest Open Campus
+Author: Loïc Druesne
+Author URI: http://ldfreelance.fr
+Description: Thème pour le site des entrepreneurs Chrysalide
+Version: 1.0
+*/
+
+
+
+.diplayNone{
+	display: none;
+}
+.diplayInline{
+	display: inline;
+}
+.w3-tangerine {font-family: 'Tangerine', cursive;font-size: 40;}
+
+
+@media only screen and (max-width: 1169px) {
+    #headerPc,#side,#headPc,#footerPc
+     {
+        display: none;
+    }
+	#page {
+		margin-top: 183px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}    
+}
+@media only screen and (min-width: 1169px) {
+    #headerMobile,#footerMobile {
+        display: none;
+    }
+	#page {
+		margin-top: 130px;
+		margin-left: 180.7px;
+		margin-right: 180.7px;
+	}
+
+}
+@media only screen and (max-width: 600px) {
+    #title1mob,#title2mob,#primary-menu-mobile a {
+		text-align: center;
+    }
+    #primary-menu-mobile li {
+	margin-left: -65px;	
+	}
+	#footerMobile{
+		text-align:center;
+	}
+	#logoChrysalideMobile,#logoLinkedInMobile{
+		display: block;		
+		margin-bottom: 30px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+@media only screen and (min-width: 600px) {
+	#logoChrysalideMobile,#logoLinkedInMobile{
+		margin-bottom: 20px;
+		margin-right: 10%;
+		margin-left: 10%;
+	}
+}
+
+
+body {
+	color:#000;
+	background-color:#cad2e8;
+	
+}
+
+
+
+
+#primary-menu-pc li {
+	border-left:1px solid #ccc;
+	color:#fff;
+	background-color:#002b80;
+
+}
+#primary-menu-mobile a {
+	color:#fff;
+	font-size: 20;	
+}
+#primary-menu-mobile ul {
+	background-color:#303e45;
+	border-top: 1px solid white;
+		
+}
+#primary-menu-mobile a:hover{
+	background-color: #8F99E2;
+}
+
+
+nav li:hover,nav a:hover{
+	background-color: #8F99E2;
+	color:#000;	
+	border-radius: 10px 0px 0px 0px;
+}
+#menu-item-40:hover {
+	border-radius: 10px 0px 0px 0px;
+}
+
+
+p {
+	text-indent: 16px;
+	font-size: 15;
+}
+#headPc {
+	position: fixed;
+	width: 100%;	
+	margin-top: -130px;	
+
+}
+#headerPc {
+	color:#fff;
+	background-color:#3B5085;
+	height: 130px;
+	border-bottom: 3px solid #002b80;		
+}
+#headMobile {
+	position: fixed;
+	width: 100%;
+	background-color:#4d636f;
+	margin-top: -183px;
+}
+#headerMobile {
+	color:#fff;
+			
+}
+#buttonMobile{
+	width: 100%;
+	font-family: 'Lobster Two', cursive;
+	background-color:#303e45;
+	font-size: 26px;
+	text-align: left;
+}
+
+
+
+#title1{
+	
+	color:#fff;
+	font-family: "Robotto", Sans-serif;	
+	font-size: 32px;
+	margin-top: 25px;
+}
+
+#title2{
+	color: #fff;
+	font-family: "Robotto", Sans-serif;	
+	margin-top: -15px;
+	font-size: 23px;	
+}
+#title1mob{
+	
+	color:#fff;
+	font-family: "Robotto", Sans-serif;	
+	font-size: 30px;
+	margin-top: 25px;
+}
+
+#title2mob{
+	color: #fff;
+	font-family: "Robotto", Sans-serif;	
+	margin-top: -15px;
+	font-size: 18px;	
+}
+
+#primary-menu-pc {	
+	list-style: none;    
+	margin-top: 43px;
+	margin-bottom: 0px;
+	margin-right: -16px;
+	float: right;	
+	font-family: 'Lobster Two', cursive;
+	font-size:18px;		
+}
+#primary-menu-mobile {	
+	list-style: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;	
+	font-family: 'Lobster Two', cursive;
+	font-size:18px;		
+}
+#menu-item-40 {
+	border-radius: 10px 0px 0px 0px;
+}
+#side {	
+	
+	width: 175px;	
+	background-color:#3B5085;
+	height: 77px;
+	border-radius: 0px 0px 10px 0px;		
+	border-bottom: 3px solid #002b80;
+	border-right: 3px solid #002b80;	
+}
+#sideTable{
+	color:#fff;	
+}
+#sideNum, #sideMail{
+	text-indent: 0px;
+	font-family: "Robotto", Sans-serif;	
+	font-size: 13;
+}
+#icon1 {
+	margin-left: 3px;
+	margin-right: 8px;
+	font-size:22px;
+	color:#8F99E2;
+}
+
+#icon2 {
+	margin-left: 0px;
+	margin-right: 0px;
+	font-size:16px;
+	color:#8F99E2;
+}
+#page {
+	color:#000;
+	background-color:#edf0f7;
+	margin-bottom: 2px;
+	font-family: "Robotto", Sans-serif;
+	font-size: 15;
+	
+}
+#PageTitle {
+	font-family: 'Lobster Two', cursive;
+	color:#3f51b5;
+	margin-top: 30px;
+}
+
+
+#footerPc {
+	color:#fff;
+	background-color:#3B5085;
+	height: 200px;
+	font-family: "Robotto", Sans-serif;	
+	border-top: 3px solid #002b80;
+}
+#footerName{
+	text-indent: 0px;
+	font-family: 'Lobster Two', cursive;
+	font-size:22px;
+}
+#footerZone{
+	text-indent: 0px;
+	font-family: 'Lobster Two', cursive;
+	font-size:22px;
+	margin-top: 50px;
+	margin-right: 0px;
+}
+#logoBretagne{
+	border-radius:170px;
+	width: 10%;
+	float: left;
+	margin-left: 100px;
+	margin-right: 40px;
+}
+#logoChrysalide{
+	border-radius:32px;
+	width: 55%;
+	float: right;
+	margin-top: 30px;
+	margin-right: 10px;
+
+}
+#logoLinkedIn{
+	border-radius:32px;
+	width: 55%;
+	float: right;
+	margin-top: 30px;
+	margin-right: 10px;
+
+}
+
+#footerMobile {
+	color:#fff;
+	background-color:#4d636f;
+	font-family: "Robotto", Sans-serif;
+}
+#footerNameMobile{
+	text-indent: 0px;
+	font-family: 'Lobster Two', cursive;
+	font-size:22px;
+}
+#footerZoneMobile{
+	text-indent: 0px;
+	font-family: 'Lobster Two', cursive;
+	font-size:22px;
+}
+#logoBretagneMobile{
+	border-radius:170px;
+	width: 35;	
+	margin-right: 15px;
+}
+#logoChrysalideMobile{
+	border-radius:32px;
+	width: 25%;	
+	min-width: 160px;
+	max-width: 200px;
+	margin-top: 30px;
+
+}
+#logoLinkedInMobile{
+	border-radius:32px;
+	width: 25%;
+	min-width: 160px;
+	max-width: 200px;	
+	margin-top: 30px;
+
+}
+
+
+/* ----Page Accueil---- */
+
+#banniereAccueil{
+	width: 1000px;
+	height:250px;
+	margin-left: 0px;
+	margin-top: 0px
+}
+#page1Tiltle{
+	font-family: 'Lobster Two', cursive;
+	color:#3a3a3a;
+}
