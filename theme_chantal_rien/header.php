@@ -19,20 +19,22 @@
 
 		function headerDisplay() {
 		    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-		        document.getElementById("title1").style.fontSize = 23;
-		        document.getElementById("title1").style.marginTop = 5;
-		        document.getElementById("title2").className = "diplayNone";
 		        document.getElementById("primary-menu-pc").style.marginTop = -43;
 		        document.getElementById("headerPc").style.height = 44;
 		        document.getElementById("titlesMob").className = "diplayNone";
+		        document.getElementById("coordonee").className = "diplayNone w3-display-topright";		        
+		        document.getElementById("logoChantalRienSmall").className = "";
+		        document.getElementById("logoChantalRienBig").className = "diplayNone";
+		        document.getElementById("hrmob").className = "diplayNone";
 		        
 		    } else {
-		        document.getElementById("title1").style.fontSize = 32;
-		        document.getElementById("title1").style.marginTop = 25;
-		        document.getElementById("title2").className = "";
 		        document.getElementById("primary-menu-pc").style.marginTop = 43;
 		        document.getElementById("headerPc").style.height = 130;
 		        document.getElementById("titlesMob").className = "";
+		        document.getElementById("coordonee").className = "w3-display-topright";
+		        document.getElementById("logoChantalRienBig").className = "";		        
+		        document.getElementById("logoChantalRienSmall").className = "diplayNone";
+		        document.getElementById("hrmob").className = "";
 		    }
 		}
 		function sideDisplay() {
@@ -60,15 +62,26 @@
 
 
 </head>
-<link href="https://fonts.googleapis.com/css?family=Lobster|Lobster+Two|Roboto|Tangerine" rel="stylesheet"> 
+
+
+<link href="https://fonts.googleapis.com/css?family=Lobster|Lobster+Two|Roboto|Tangerine" rel="stylesheet">
+
 <body>
 <div id="headPc">
 
 <!--Début header large screen -->
 	<div id="headerPc" class="w3-container w3-card-2">
 		<div class="w3-third">
-			<p id="title1">Chantal RIEN Consultant</p>
-			<p id="title2">Conseil Prevention et Santé</p>
+			<!--<p id="title1">Chantal RIEN Consultant</p>
+			<p id="title2">Conseil Prevention et Santé</p>-->
+			<?php 
+				$image_url1='http://chantalrien.com/wp-content/uploads/2017/01/logoChantalRienBig-300x154.png';
+			?>
+			<img id="logoChantalRienBig" border="0" src="<?php echo $image_url1;?>">
+			<?php 
+				$image_url1='http://chantalrien.com/wp-content/uploads/2017/01/logoChantalRienSmall-300x126.png';
+			?>
+			<img id="logoChantalRienSmall" class="diplayNone" border="0" src="<?php echo $image_url1;?>">
 		</div>
 		<nav id="primary-menu-pc" class="w3-container w3-navbar w3-rest" role="navigation">	
 			<?php dynamic_sidebar('my_custom_zone');?>		
@@ -78,7 +91,8 @@
 			?>			
 		</nav>
 	</div>
-	<div id="side" class="w3-container w3-card-2">
+	<p id="coordonee" class="w3-display-topright"><i id="icon1" class="fa fa-mobile-phone"></i>06.56.24.75.98<i id="icon2" class="fa fa-at"></i> chantalrien@orange.fr</p>
+	<!--<div id="side" class="w3-container w3-card-2">
 		<table id="sideTable">
 			<tr>
 				<td><i id="icon1" class="fa fa-mobile-phone"></i></td>
@@ -89,7 +103,7 @@
 				<td><p id="sideMail"> chantalrien@orange.fr</p></td>
 			</tr>
 		</table>
-	</div>
+	</div>-->	
 </div>
 <!--Fin header large screen -->
 
@@ -97,12 +111,17 @@
 <div id="headMobile" class="w3-card-2">
 	<div id="headerMobile">
 		<div id="titlesMob">
-			<p id="title1mob">Chantal RIEN Consultant</p>
-			<p id="title2mob">Conseil Prevention et Santé</p>
+			<!--<p id="title1mob">Chantal RIEN Consultant</p>
+			<p id="title2mob">Conseil Prevention et Santé</p>-->
+			<?php 
+				$image_url1='http://chantalrien.com/wp-content/uploads/2017/01/logoChantalRienBig-300x154.png';
+			?>
+			<img id="logoChantalRienBigMob" border="0" src="<?php echo $image_url1;?>">			
 		</div>
 		<div>
+		<hr id="hrmob" style="margin-bottom: 0px;border-color:#fff;">
 		<button id="buttonMobile" onclick="myFunction('primary-menu-mobile')" class="w3-btn">
-			Menu<i class="fa fa-bars w3-xlarge" style="margin-top: -35px;float: right;"></i>
+			Menu<i class="fa fa-bars w3-xlarge" style="margin-top: -31px;float: right;"></i>
 		</button>	
 		<nav id="primary-menu-mobile" class="w3-accordion-content" role="navigation">	
 			<?php dynamic_sidebar('my_custom_zone');?>		

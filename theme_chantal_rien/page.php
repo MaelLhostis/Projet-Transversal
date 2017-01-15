@@ -27,10 +27,10 @@ w3-blue est une classe de w3.css (inclus dans le header)
 		<?php the_content(); ?>
 	<?php endwhile; ?>
 
-	<?php 
+	<!--<?php 
 	// exemple d'utilisation du fichier functions.php
 	afficherCeQueJeVeux(); 
-	?>
+	?>-->
 
 	<?php 
 	// on inclus le fichier sidebar.php (widget)
@@ -42,3 +42,4 @@ w3-blue est une classe de w3.css (inclus dans le header)
 // on inclus le fichier footer.php
 get_footer(); 
 ?>
+

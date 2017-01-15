@@ -8,7 +8,7 @@
 		<p>chantalrien@orange.fr</p>
 	</div>
 	<div class="w3-third w3-container" style="border-right: 2px solid #002b80;border-left: 2px solid #002b80;">
-		<h3 class="w3-tangerine w3-center">Propulsée par la SCIC Chrysalide</h3>
+		<h3 class="w3-tangerine w3-center" style="font-size: 35px;">Propulsée par la SCIC Chrysalide</h3>
 		<p id="footerZone">
 		<?php 
 			$image_url1='http://blog5.ecole-jeanleuduger-plerin.fr/wp-content/uploads/2016/04/breizh.jpg';
@@ -32,8 +32,8 @@
 		<img id="logoLinkedIn" border="0" src="<?php echo $image_url2;?>">
 		</a>
 	</div>
-</div>
-
+	
+</div>	
 <!--Fin footer large screen -->
 <!--Début footer small screen -->
 <div id="footerMobile" class="w3-container">
